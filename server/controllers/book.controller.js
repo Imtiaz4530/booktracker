@@ -2,8 +2,13 @@ const Book = require("../models/book.model");
 const jwt = require("jsonwebtoken");
 
 const getAllBooks = async (req, res) => {
-  const books = await Book.find({ userId: req.user.id });
-  res.json(books);
+  try {
+    const books = await Book.find({ userId: req.user.id });
+    res.json(books);
+  } catch (e) {
+    console.log(e);
+    res.status(500).json({ Error: e, message: "Server Error from updateBook" });
+  }
 };
 
 const createBook = async (req, res) => {

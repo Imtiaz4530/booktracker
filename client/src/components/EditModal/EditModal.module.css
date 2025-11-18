@@ -1,0 +1,89 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: #2d2f34;
+  padding: 2rem;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 420px;
+  border: 1px solid #3c3f45;
+}
+
+.title {
+  font-family: "DM Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-family: "Inter", sans-serif;
+  color: #d1d1d1;
+  margin-bottom: 0.4rem;
+}
+
+.input {
+  width: 100%;
+  background: #1f2124;
+  border: 1px solid #3b3f47;
+  padding: 0.7rem;
+  border-radius: 8px;
+  color: #fff;
+  margin-bottom: 1.1rem;
+}
+
+.btn {
+  width: 100%;
+  background: #444c56;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.btn:hover {
+  background: #515a66;
+}
+.disabledField {
+  background: #2a2c31 !important;
+  opacity: 0.6;
+  cursor: not-allowed;
+  border: 1px solid #444;
+}
+
+.error {
+  background: #5a2d2d;
+  color: #ffb6b6;
+  padding: 0.6rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.closeBtn {
+  width: 100%;
+  margin-top: 0.7rem;
+  background: #34363b;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+}
+
+.closeBtn:hover {
+  background: #44464c;
+}

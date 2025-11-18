@@ -3,6 +3,8 @@ const express = require("express");
 const cors = require("cors");
 
 const connectDB = require("./db/connectDB");
+const userRoutes = require("./routes/user.route");
+const bookRoutes = require("./routes/book.routes");
 
 const app = express();
 
@@ -18,6 +20,9 @@ connectDB();
 app.get("/", (req, res) => {
   res.send("API is running...");
 });
+
+app.use("/api/user", userRoutes);
+app.use("/api/book", bookRoutes);
 
 const PORT = process.env.PORT || 3000;
 

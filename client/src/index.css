@@ -1,0 +1,40 @@
+/* ----------------------------- */
+/*      FONT IMPORTS (2 Fonts)   */
+/* ----------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Sans:wght@400;500;700&display=swap");
+
+/* ----------------------------- */
+/*           GLOBAL RESET        */
+/* ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------- */
+/*         GLOBAL THEME          */
+/* ----------------------------- */
+body {
+  background-color: #121417;
+  color: #e9ecef;
+  font-family: "Inter", "DM Sans", sans-serif;
+  line-height: 1.5;
+}
+
+/* smoother form interactions */
+input,
+button {
+  transition: 0.2s ease;
+}
+/* Global link reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove list bullets */
+ul,
+li {
+  list-style: none;
+}

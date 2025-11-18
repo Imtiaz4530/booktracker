@@ -1,0 +1,99 @@
+.navbar {
+  width: 100%;
+  padding: 14px 48px;
+  background-color: #1c1f23;
+  border-bottom: 1px solid #33383d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ----- LEFT (LOGO) ----- */
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #e9ecef;
+  letter-spacing: 0.5px;
+}
+
+/* ----- RIGHT BUTTON GROUP ----- */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Primary button (Create) */
+.buttonPrimary {
+  background-color: #4f8ff7;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  transition: 0.2s ease;
+  font-weight: 600;
+}
+
+.buttonPrimary:hover {
+  background-color: #6ea2ff;
+}
+
+.buttonSecondary {
+  background-color: transparent;
+  border: 1px solid #33383d;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #e9ecef;
+  font-family: "Inter", sans-serif;
+  transition: 0.2s ease;
+  font-weight: 600;
+}
+
+.buttonSecondary:hover {
+  background-color: #262a2f;
+  border-color: #4f8ff7;
+}
+.logoutBtn {
+  padding: 11px 18px;
+  background-color: #b33a3a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.15);
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    padding: 16px;
+  }
+
+  .logoutBtn {
+    padding: 10px 14px;
+    font-size: 11px;
+  }
+
+  .buttonPrimary {
+    padding: 7px 14px;
+    font-size: 11px;
+  }
+
+  .buttonSecondary {
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+}

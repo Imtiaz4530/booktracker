@@ -41,6 +41,8 @@ export default function EditModal({ book, onClose }) {
     });
   };
 
+  console.log(book);
+
   if (!book) return null;
 
   return (
@@ -58,7 +60,7 @@ export default function EditModal({ book, onClose }) {
           <label className={styles.label}>Book Name</label>
           <input
             type="text"
-            value={book.book}
+            value={book.name}
             className={`${styles.input} ${styles.disabledField}`}
             disabled
           />
